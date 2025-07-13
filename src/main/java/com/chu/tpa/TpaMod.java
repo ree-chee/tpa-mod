@@ -39,7 +39,7 @@ public class TpaMod implements ModInitializer {
         // 冷却时间管理系统（UUID -> 最后使用时间戳）
 		private static final HashMap<UUID, Long> cooldowns = new HashMap<>();
         // 冷却时长设定为10秒（单位：毫秒）
-		private static final long COOLDOWN_TIME = 10000;
+		private static final long COOLDOWN_TIME = 0;
         /**
          * 注册所有命令到命令分发器
          * @param dispatcher 命令分发器实例
