@@ -182,9 +182,7 @@ public class TpaMod implements ModInitializer {
          */
 		private static boolean canUseCommand(UUID uuid) {
             // 如果未记录或已过冷却时间则返回true
-			return !cooldowns.containsKey(uuid) ||
-					// 检查冷却状态
-					(System.currentTimeMillis() - cooldowns.get(uuid)) >= COOLDOWN_TIME;
+			return true;
 		}
         /**
          * 设置玩家的最后使用时间戳
